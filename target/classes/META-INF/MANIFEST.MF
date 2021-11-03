@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1635957322744
+Build-Jdk: 1.8.0_202
+Built-By: Imran
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: JiBX opentravel touractivity web service implementat
+ ion
+Bundle-DocURL: http://www.jibx.org
+Bundle-License: http://jibx.sourceforge.net/jibx-license.html
+Bundle-ManifestVersion: 2
+Bundle-Name: opentravel-touractivity-ws-service
+Bundle-SymbolicName: tv-book
+Bundle-Vendor: jibx.org
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Service: org.jibx.schema.org.opentravel._2012A.touractivity.ws.To
+ urActivityService;osgi.service.blueprint.compname=tourActivitySvc
+Import-Package: org.jibx.schema.org.opentravel._2012A.base;resolution:=o
+ ptional;version="[1.0,2)",org.jibx.schema.org.opentravel._2012A.base.to
+ uractivity;resolution:=optional;version="[1.0,2)",org.jibx.schema.org.o
+ pentravel._2012A.touractivity;resolution:=optional;version="[1.0,2)",or
+ g.jibx.schema.org.opentravel._2012A.touractivity.ws;resolution:=optiona
+ l;version="[1.0,2)",org.jibx.schema.org.opentravel._2012A.touractivity.
+ ws.impl;resolution:=optional;version="[1.0,2)",org.osgi.service.bluepri
+ nt;version="[1.0.0,2.0.0)";resolution:=optional
+JibxRepositoryId: sonatype-nexus-snapshots
+JibxRepositoryLocation: http://oss.sonatype.org/content/repositories/sna
+ pshots/
+Require-Bundle: org.apache.cxf.bundle
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Tool: Bnd-5.1.1.202006162103
